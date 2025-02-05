@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="author" title="Zachary Fraedrich">
+    <link rel="stylesheet" href="styles.css">
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
 
     <header>
-        Destination Majorca
-        Let Wonderlust Travel help you plan the trip of your dreams!
-        Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
+        <h1>Destination Majorca</h1>
+        <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
+        <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
     <nav>
-        Main Navigation
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -24,16 +25,16 @@
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Inspirations</a></li>
             <li><a href="#">Special</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
         </ul>
     </nav>
     <main>
         <article>
-            Majorca
+            <h2>Majorca</h2>
             <section id="intro">
 
-                Introduction
-                Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
+                <h3>Introduction</h3>
+                <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
                 <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
@@ -42,14 +43,21 @@
 
                     404px, 920px, 1280px
                     -->
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l" />
+                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m" />
+
+                        <img src="images/majorca-beach-square-s" alt="waves crashing on shore during sunset" />
+                    </picture>
+
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
             <section id="plan-your-trip">
-                Plan Your Trip
+                <h3>Plan Your Trip</h3>
 
                 <section class="plan">
-                    How to Get There
+                    <h3>How to Get There</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
@@ -57,7 +65,7 @@
                     <a href="#" title="Search for flights">Search Flights</a>
                 </section>
                 <section class="plan">
-                    Places to Stay
+                    <h3>Places to Stay</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
@@ -66,7 +74,7 @@
                     <a href="#" title="Search for Hotels">Search Hotels</a>
                 </section>
                 <section class="plan">
-                    Things to do
+                    <h3>Things to do</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1" />
@@ -77,7 +85,7 @@
                     <a href="#" title="Search for Activities">Search Activity</a>
                 </section>
                 <section class="plan">
-                    Where to Eat
+                    <h3>Where to Eat</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
@@ -86,7 +94,7 @@
                 </section>
             </section>
             <section id="testimonials">
-                Testimonials
+                <h2>Testimonials</h2>
 
                 <section>
                     <!--Responsive Image for resolution switching
@@ -96,7 +104,7 @@
                         images/miranda-blake-L.png 1280w
                     -->
                         <div>
-                        Miranda Blake
+                        <h3>Miranda Blake</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
@@ -112,12 +120,12 @@
                         images/max-winter-L.png 1280w
                     -->
                         <div>
-                        Max Winter
+                        <h3>Max Winter</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <blockquote>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</blockquote>
                     </div>
                 </section>
                 <section>
@@ -128,12 +136,12 @@
                         images/ines-villegoes-L.png 1280w 
                     -->
                     <div>
-                        Inés Villegoes
+                        <h3>Inés Villegoes</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                        <blockquote>"A very safe environment for all travelers."</blockquote>
                     </div>
                 </section>
                 <section>
@@ -144,17 +152,17 @@
                         images/carmen-lorenzo-L.png 1280w
                     -->
                         <div>
-                        Carmen Lorenzo
+                        <h3>Carmen Lorenzo</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <blockquote>"Live, laugh, love-- everything you need in Majorca."</blockquote>
                     </div>
                 </section>
             </section>
             <section id="about-your-destination">
-                About Your Destination
+                <h3>About Your Destination</h3>
 
                 <section>
                     Size
@@ -219,7 +227,7 @@
             
                 <div>
                     <label>First Name<span>*</span></label>
-                    <input>
+                    <input type="text" required>
                 </div>
                 <div>
                     <label>Last Name<span>*</span></label>
