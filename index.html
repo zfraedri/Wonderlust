@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" title="Zachary Fraedrich">
+    <meta name="author" content="Zachary Fraedrich">
     <link rel="stylesheet" href="styles.css">
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
@@ -108,12 +108,7 @@
                 </section>
 
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/max-winter-L.png
-                        images/max-winter-S.png 404w
-                        images/max-winter-M.png 920w
-                        images/max-winter-L.png 1280w
-                    -->
+                    
                     <picture>
                         <source media="(min-width: 1280px)" srcset="images/max-winter-L.png">
                         <source media="(min-width: 920px)" srcset="images/max-winter-M.png">
@@ -227,38 +222,39 @@
             
                 <div>
                     <label>First Name<span>*</span></label>
-                    <input type="text" required>
+                    <input type="text" required placeholder="John">
                 </div>
                 <div>
                     <label>Last Name<span>*</span></label>
-                    <input>
+                    <input type="text" required placeholder="Smith">
                 </div>
                 <div>
                     <label>Email<span>*</span></label>
-                    <input>
+                    <input type="email" required placeholder="you@email.com">
                 </div>
                 <div>
                     <label>Phone<span>*</span></label>
-                    <input>
+                    <input type="tel" required placeholder="(555)123-4567">
                 </div>
+
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
+                        <input type="radio" id="radForPrefContactEmail">
                         <label>Email</label>
                     </div>
                     <div>
-                        <input>
+                        <input type="radio" id="radForPrefContactText">
                         <label>Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="radForPrefContactPhone">
+                        <label for="radForPrefContactPhone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -273,7 +269,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
